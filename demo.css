@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Mulish", sans-serif;
+}
+
+*{
+    margin: 0;
+}
+
+.container{
+    width: 90%;
+    margin: 5rem auto;
+}
+
+h3{
+    font-size: 36px;
+    font-weight: 800;
+}
+
+p{
+    /* display: inline; */
+}
+
+p,li{
+    color: rgba(19, 19, 24, 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+
+/* Navbar section */
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo img{
+    width: 50px;
+    height: 56px;
+}
+
+.nav-options a{
+    text-decoration: none;
+    color: rgb(66, 66, 71);
+    margin-left: 3rem;
+}
+
+.span{
+    color: rgb(255, 84, 0);
+    
+}
+
+/* Banner Section */
+
+.explore-container{
+    background-image: linear-gradient(
+    180deg, 
+    rgba(19, 19, 24, 0.8) 0%, 
+    rgba(19, 19, 24, 0) 100%
+    ),
+    url(./Images/Group\ 13\ \(1\)\ \(1\).png);
+    padding: 7rem 0;
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore-text h1, p{
+    text-align: center;
+}
+
+.explore-text h1{
+    font-size: 64px;
+    line-height: 80px;
+    color: white;
+}
+
+.explore-text p{
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    width: 676px;
+    margin: auto;
+    padding: 1.5rem;
+}
+
+.explore-inputs{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+    background-position: center;
+    padding: 1rem;
+    border-radius: 8px;
+
+}
+
+.explore-inputs input, select{
+    width: 174px;
+    height: 53px;
+    border-radius: 8px;
+    border: none;
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+}
+
+.explore-inputs select{
+    width: 174px;
+    height: 53px;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn-primary{
+    width: 174px;
+    height: 53px;
+    background: rgb(255, 84, 0);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+/* popular tour section */
+
+.popular-tours{
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-text{
+    text-align: left;
+    flex-basis: 55%;
+
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 20px;
+}
+
+.popular-text p{
+    /* display: inline; */
+    text-align: left;
+}
+
+
+.popular-img{
+    flex-basis: 40%;
+}
+
+.popular-img img{
+    width: 100%;
+}
+
+/* destinaiton section */
+
+
+.destination-text{
+    text-align: center;
+}
+
+.destination-text p{
+    width: 600px;
+    margin: 20px auto 30px;
+}
+
+.destination-images{
+    display: grid;
+}
+
+.col-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 20px;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.col-img img{
+    width: 100%;
+}
+
+.img{
+    position: relative;
+}
+
+.img-title{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    font-weight: 800;
+}
+
+/* why choose us section */
+
+.why-choose-us{
+    /* padding: 40px; */
+}
+
+.choose-text{
+    text-align: center;
+}
+
+.choose-text p{
+    color: rgba(19, 19, 24, 0.7);;
+    width: 600px;
+    margin: 20px auto 40px;
+}
+
+.choose-card-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+}
+
+.choose-card-container h4{
+    color: rgb(19, 19, 24);
+    font-weight: bold;
+    font-size: 24px;
+    margin: 15px 0;
+    
+}
+
+.choose-card-container p{
+    display: inline;
+    
+}
+
+.choose-card-1{
+    grid-column: 1 / span 6;
+    background: rgba(251, 181, 99, 0.05);
+    padding: 40px;
+    margin-left: 50px;
+    height: 180px;
+}
+
+.choose-card-2{
+    grid-column: 7 / span 6;
+    background: rgba(41, 206, 246, 0.05);
+    padding: 40px;
+    margin-right: 50px;
+    height: 180px;
+}
+
+.choose-card-3{
+    grid-column: 4 / span 6;
+    background: rgba(233, 68, 68, 0.05);
+    padding: 40px;
+    height: 180px;
+}
+
+/* discount section */
+
+.discount-text{
+    text-align: center;
+}
+
+.discount-text p{
+    width: 640px;
+    margin: 30px auto;
+}
+
+.discount-card{
+    background-image: url(Images/Group\ 39.png);
+    background-position: center;
+    background-size: cover;
+}
+
