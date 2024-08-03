@@ -284,8 +284,17 @@ p,li{
 }
 
 .discount-card{
-    background-image: url(Images/Group\ 39.png);
+    /* background-image: url(Images/Group\ 39.png); */
     background-position: center;
     background-size: cover;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+}
+
+.info li{
+    list-style-type: none;
 }
 
